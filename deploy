@@ -2,7 +2,7 @@
 
 echo ""
 echo "--------------------------------------------------------------------------------"
-echo "Deploying thomas-mcevoy.com with the following commit message:"
+echo "Deploying thomas-mcevoy.com-nuxt with the following commit message:"
 echo "'$1'"
 echo "--------------------------------------------------------------------------------"
 
@@ -12,6 +12,6 @@ git add .
 git commit -m "$1"
 git push
 
-ssh tom@68.183.30.7 "cd thomas-mcevoy.com &&
+ssh tom@68.183.30.7 "cd thomas-mcevoy.com-nuxt &&
 git pull &&
-"
+npm run prod"
