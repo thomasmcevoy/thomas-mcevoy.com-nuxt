@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header />
     <main>
-      <HeroImage/>
-      <About/>
-      <Music/>
-      <Shows/>
-      <Contact @toggleModal="toggleModal"/>
+      <HeroImage />
+      <About />
+      <Music />
+      <Shows />
+      <Contact />
     </main>
-    <Footer/>
-    <Modal v-show="showModal" @toggleModal="toggleModal"/>
+    <Footer />
+    <Modal />
   </div>
 </template>
 
@@ -21,8 +21,7 @@ import {
   Music,
   Shows,
   Contact,
-  Footer,
-  Modal
+  Footer
 } from '~/components'
 
 export default {
@@ -34,18 +33,7 @@ export default {
     Music,
     Shows,
     Contact,
-    Footer,
-    Modal
-  },
-  data() {
-    return {
-      showModal: false
-    }
-  },
-  methods: {
-    toggleModal() {
-      this.showModal = !this.showModal
-    }
+    Footer
   }
 }
 </script>
