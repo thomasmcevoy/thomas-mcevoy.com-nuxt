@@ -9,7 +9,6 @@
       <Contact />
     </main>
     <Footer />
-    <Modal />
   </div>
 </template>
 
